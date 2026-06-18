@@ -1,0 +1,7 @@
+{
+    "C_Cpp.errorSquiggles": "disabled",
+    "git.path": "C:\\Program Files\\Git\\cmd\\git.exe",
+    "terminal.integrated.env.windows": {
+        "PATH": "C:\\Program Files\\Git\\cmd;${env:PATH}"
+    }
+}
