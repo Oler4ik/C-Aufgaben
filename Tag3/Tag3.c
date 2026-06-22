@@ -2,25 +2,39 @@
 
 int main()
 {
-	int jahr = 0;
-		
-	int durch4 = jahr%4 == 0;
-	int durch100 = jahr%100 == 0;
-	int durch400 = jahr%400 == 0;
+	int zahl = 0;
+	char groese = 'k';
 	
-	printf("Schreiben Sie ein Jahr:\n");
+	puts("Ist die Zahl größer oder kleiner 10");
+	puts("Gib ein Zahl:");
 	
-	int scan = scanf("%i", &jahr);
-	printf("scan: %d\n", scan);
+	scanf("%d", &zahl);
 	
-	if (durch4 && !durch100 || durch400){
-	printf("%d ist ein Schaltjahr\n", jahr);
+	/*  if (zahl >= 10){
+		groese = 'g';
+		printf("Die Zahl %d ist groß", zahl);
+	 }
+	 else {
+		groese = 'k';	 
+		printf("Die Zahl %d ist klein", zahl);
+	 }
+	printf("Die Zahl is: %c\n", groese); */
+	
+	switch (zahl){
+	case 1:
+	puts("eins");
+	break;
+	
+	case 2:
+	puts("zwei");
+	break;
+	
+	case 3:
+	puts("drei");
+	break;
+	
+	default: 
+	puts("an haufa");
 	}
-	else 
-		printf("%d ist kein Schaltjahr\n", jahr);
-	
-	printf("/4: %d, /100: %d, /400: %d\n", durch4, durch100, durch400);
-	
-	
-	return 0;
+	 return 0;
 }
