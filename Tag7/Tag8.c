@@ -32,7 +32,7 @@ int main ()
 	int a = 10, b = -3;
 	printf("a - %d und b - %d getauscht. \n", a,b);
 	tausch1(a,b); //tausch1 (10, -3) 
-	printf("a - %d und b - %d getauscht. \n", Global1, Global2);
+	printf("Global1 - %d und Global2 - %d getauscht. \n", Global1, Global2);
 	
 	tausch2(&a, &b);
 	printf("a - %d und b - %d getauscht. \n", a,b);
